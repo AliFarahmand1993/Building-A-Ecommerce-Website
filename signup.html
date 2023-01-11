@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon  -->
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet" />
+    <!-- Main Style  -->
+    <link rel="stylesheet" href="./assets/output/output.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- title -->
+    <title>ShopFall</title>
+</head>
+
+<body>
+ <!-- header start -->
+ <header class="my-16 mx-14">
+    <nav class="lg:flex lg:flex-row lg:justify-between lg:items-center hidden">
+      <a href="./index.html" class="text-4xl font-bold text-primaryColor hover:text-black inline"><i
+          class="fa-solid fa-shop"></i>
+        ShopFall</a>
+      <ul class="flex mx-4 space-x-12 text-3xl">
+        <li><a href="./index.html" class="hover:text-primaryColor ">Home</a></li>
+        <li><a href="blog.html" class="hover:text-primaryColor ">Blog</a></li>
+        <li><a href="./login.html" class="hover:text-primaryColor ">Login</a></li>
+        <li><a href="./signup.html" class="hover:text-primaryColor">Sign-Up</a></li>
+      </ul>
+      <ul class="flex mx-7 space-x-3 text-3xl">
+        <li><a href=""><i class="fa-solid fa-magnifying-glass hover:text-primaryColor"></i></a></li>
+        <li><a href=""><i class="fa-solid fa-user hover:text-primaryColor"></i></a></li>
+        <li><a href=""><i class="fa-solid fa-bell hover:text-primaryColor"></i></a></li>
+      </ul>
+    </nav>
+    <!-- mobile menu start -->
+    <nav class="flex flex-row justify-between items-center lg:hidden ">
+      <a href="./index.html" class="text-2xl font-bold text-primaryColor hover:text-black inline"><i
+          class="fa-solid fa-shop"></i>
+        ShopFall</a>
+      <ul class="text-lg flex flex-row space-x-4 mx-4">
+        <li><a href="./index.html" class="hover:text-primaryColor ">Home</a></li>
+        <li><a href="blog.html" class="hover:text-primaryColor ">Blog</a></li>
+        <li><a href="./login.html" class="hover:text-primaryColor ">Login</a></li>
+        <li><a href="./signup.html" class="hover:text-primaryColor">Sign-Up</a></li>
+      </ul>
+    </nav>
+    <!-- mobile menu end -->
+  </header>
+  <!-- header end -->
+    <!-- main section start -->
+    <main class="py-32 bg-lightpink">
+        <div class="container mx-auto py-10">
+            <div
+                class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg  overflow-hidden ">
+                <div class="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center"
+                    style="background-image: url('assets/img/signup-login/Register-Background.png');">
+                    <h1 class="text-white text-3xl mb-5">Welcome</h1>
+                    <div>
+                        <p class="text-white text-justify">Already Have Account? <a href="./login.html"
+                                class="text-primaryColor font-semibold ">Login</a></p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 py-16 px-12">
+                    <h2 class="text-3xl mb-8">Register</h2>
+                    <p class="mb-4">
+                        Create your account. It’s free and only take a minute
+                    </p>
+                    <form action="#">
+                        <div class="grid grid-cols-2 gap-6">
+                            <input type="text" placeholder="Firstname"
+                                class="border border-gray-400 py-3 px-2 rounded-md">
+                            <input type="text" placeholder="Surname"
+                                class="border border-gray-400 py-3 px-2 rounded-md">
+                        </div>
+                        <div class="mt-5">
+                            <input type="text" placeholder="Email"
+                                class="border border-gray-400 py-3 px-2 w-full rounded-md">
+                        </div>
+                        <div class="mt-5">
+                            <input type="password" placeholder="Password"
+                                class="border border-gray-400 py-3 px-2 w-full rounded-md">
+                        </div>
+                        <div class="mt-5">
+                            <input type="password" placeholder="Confirm Password"
+                                class="border border-gray-400 py-3 px-2 w-full rounded-md">
+                        </div>
+                        <div class="mt-5">
+                            <input type="checkbox" class="border border-gray-400">
+                            <span>
+                                I accept the <a href="#" class="text-primaryColor font-semibold">Terms of Use</a> &
+                                <a href="#" class="text-primaryColor font-semibold">Privacy Policy</a>
+                            </span>
+                        </div>
+                        <div class="mt-5">
+                            <button
+                                class="w-full bg-primaryColor py-3 text-center text-white rounded-md  hover:text-black hover:bg-lightpink">Register
+                                Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main section end -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
