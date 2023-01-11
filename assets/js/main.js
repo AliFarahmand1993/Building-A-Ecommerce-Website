@@ -36,5 +36,5 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(err);
         }
     }
-    fetchProducts('https://api.escuelajs.co/api/v1/products');
+    // fetchProducts('https://api.escuelajs.co/api/v1/products');
 });
