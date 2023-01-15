@@ -42,7 +42,6 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 'auto',
     loop: true,
     speed: 5000,
-    // slidesPerView: '2',
     autoplay: {
       enabled: true,
       delay: 1,
