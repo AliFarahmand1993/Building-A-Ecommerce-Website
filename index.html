@@ -8,9 +8,10 @@
   <!-- icon  -->
   <link href="assets/fontawesome/css/all.min.css" rel="stylesheet" />
   <!-- Main Style  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/output/output.css">
   <link rel="stylesheet" href="./assets/css/main.css">
-<!-- title -->
+  <!-- title -->
   <title>ShopFall</title>
 </head>
 
@@ -57,9 +58,10 @@
           <span class="py-10 lg:text-4xl text-2xl">Buy Everything You Want in</span>
           <h1 class="lg:text-8xl font-semibold py-10 text-4xl">Shop<span class="text-primaryColor">Fall</span></h1>
           <p class="py-5 lg:text-4xl text-2xl">Your go-to destination for all things fashion</p>
-          <button
-            class="mt-8 rounded-xl lg:text-4xl lg:font-bold text-white bg-primaryColor px-8 py-4  hover:text-blackColor hover:bg-whiteColor text-2xl transition">Explore
-            Now!</button>
+          <div class="mt-6"> <a href="#product"
+              class=" rounded-xl lg:text-4xl lg:font-bold text-white bg-primaryColor px-8 py-4  hover:text-blackColor hover:bg-whiteColor text-2xl transition">Explore
+              Now!</a></div>
+
         </div>
         <div class="hidden md:block">
           <img src="./assets/img/home/woman-in-cart.png"
@@ -69,9 +71,10 @@
     </section>
     <!-- banner section end -->
     <!-- get api product start -->
-    <section  class="my-16">
+    <section class="my-16">
       <div class="flex flex-row items-center justify-center">
-        <h1 class="lg:text-6xl font-semibold py-10 text-4xl border-b-4 border-primaryColor">Our Last<span class="text-primaryColor"> Product</span>
+        <h1 class="lg:text-6xl font-semibold py-10 text-4xl border-b-4 border-primaryColor">Our Last<span
+            class="text-primaryColor" id="product"> Product</span>
         </h1>
       </div>
       <div class="products">
@@ -80,12 +83,75 @@
     <!-- get api product end -->
   </main>
   <!-- footer area start -->
-  <footer>
-
+  <footer class="bg-primaryColor py-12 px-12">
+    <div class="container px-2 text-white">
+      <div class="flex flex-wrap justify-around">
+        <!-- part 1 -->
+        <div>
+          <h2 class="font-bold text-4xl mb-4">Explore</h2>
+          <div class="flex mt-8 gap-3">
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-white text-2xl p-5 text-white hover:text-black transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-white text-2xl p-5 text-white hover:text-black transition">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-white text-2xl p-5 text-white hover:text-black transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-white text-2xl p-5 text-white hover:text-black transition">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-white text-2xl p-5 text-white hover:text-black transition">
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+        <!-- part2 -->
+        <div>
+          <h2 class="font-bold text-4xl mb-4">Our Links</h2>
+          <ul>
+            <li class=" hover:text-black transition"><a href="./index.html">Home</a></li>
+            <li class=" hover:text-black transition"><a href="./login.html">Login</a></li>
+            <li class=" hover:text-black transition"><a href="./signup.html">Sign Up</a></li>
+            <li class=" hover:text-black transition"><a href="./blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <!-- part3 -->
+        <div>
+          <h2 class="font-bold text-4xl mb-4">Last Post:</h2>
+          <!-- swiper js -->
+          <!-- Slider main container -->
+          <div class="swiper mt-6 my-12">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><a href="./Single-blog.html"><img class="object-cover w-100 h-40  rounded-lg"
+                    src="./assets/img/blog/img-1.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="./Single-blog.html"><img class="object-cover w-100 h-40 rounded-lg"
+                    src="./assets/img/blog/img-2.jpg" alt=""></a>
+              </div>
+              <div class="swiper-slide"><a href="./Single-blog.html"><img class="object-cover w-100 h-40 rounded-lg"
+                    src="./assets/img/blog/img-3.jpg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t py-4">
+      <p class=" text-lg text-center text-white">Copyright © 2021 <span class="font-semibold">Radwin Web</span>
+        All Rights Reserved</p>
+    </div>
   </footer>
   <!-- footer area end -->
   <!-- main section end -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 
