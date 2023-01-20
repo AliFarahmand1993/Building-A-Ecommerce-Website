@@ -43,7 +43,26 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     speed: 5000,
     autoplay: {
-      enabled: true,
-      delay: 1,
+        enabled: true,
+        delay: 1,
     },
-  });
+});
+
+//   Add valdtion Login Form
+function validateLogin() {
+    let name = document.myform.name.value;
+    let password = document.myform.password.value;
+
+    if (name == null || name == "") {
+        alert("Name can't be blank");
+        return false;
+    } else if (name.length < 6) {
+        alert("Name must be at least 6 characters long");
+        return false;
+    } else if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return false;
+    } else {
+        alert("Welcome to shopfall")
+    }
+}
